@@ -1,3 +1,26 @@
 body {
-    background-color: red;
+	background: whitesmoke; 
+}
+
+.wrap {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main {
+    height: 100%;
+	background: #c7b198;
+    flex: 3;
+    box-shadow: -10px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    height: 100%;
+	background: #596e79; 
+    flex: 1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }

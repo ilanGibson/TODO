@@ -1,6 +1,7 @@
 import "./style.css";
 import { Todo } from "./todo.js";
 import { Project } from "./project.js";
+import MainPage from "./mainPage.js";
 
 const ProjectList = (() => {
   const projects = [];
@@ -15,6 +16,5 @@ const ProjectList = (() => {
   return { addProject, getProjects };
 })();
 
-ProjectList.addProject(new Project());
-console.log(ProjectList.getProjects());
+MainPage();
 
