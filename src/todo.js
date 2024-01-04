@@ -1,15 +1,21 @@
-class Todo {
-    constructor(title, description, dueDate, priority) {
+import { parseISO } from "date-fns";
+
+export class Todo {
+    constructor(title = "New TODO", description = "", dueDate = new Date(), priority = "low", completed = false) {
         this.title = title;
         this.description = description;
-        this.dueDate = dueDate;
+        // check if dueDate is a string then parse it to a date object
+        // otherwise assume it is a date object
+        this.dueDate = typeof dueDate === "string" ? parseISO(dueDate) : dueDate;
         this.priority = priority;
-        this.completed = false;
+        this.completed = completed;
         
     }
+
     toggleCompleted() {
         this.completed = !this.completed;
     }
+
     setTitle(newTitle) {
         this.title = newTitle;
     }
@@ -32,6 +38,10 @@ class Todo {
 
     getDueDate() {
         return this.dueDate;
+    }
+
+    getDueDateDay() {
+        return this.dueDate.getDate();
     }
     
     setPriority(newPriority) {
