@@ -1,4 +1,4 @@
-export default function StoreProject(project) {
+export default function storeProject(project) {
     let project_serialized = JSON.stringify(project);
     if (localStorage.getItem(`${project.name}`) === null) {
         localStorage.setItem(`${project.name}`, project_serialized);
