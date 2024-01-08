@@ -24,3 +24,16 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
+.sidebar-project {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sidebar-project:hover {
+    background: #c7b198;
+    color: #596e79;
+}
