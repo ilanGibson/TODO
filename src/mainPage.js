@@ -65,7 +65,9 @@ function loadProjects(sidebar) {
         projectDiv.classList.add(projectName.replace(/\s/g, ""));
         projectDiv.textContent = projectName;
         projectDiv.addEventListener("click", () => {
+            clearMainContent();
             loadProjectPage(projectName);
+
         });
         sidebar.appendChild(projectDiv);
     });
@@ -74,16 +76,8 @@ function loadProjects(sidebar) {
 
 function loadProjectPage(projectName) {
 
-    // load the project todos into the main content
-    const mainTodos = document.querySelectorAll("main-todo");
-    mainTodos.forEach(div => {
-        div.remove();
-    });
-
-    console.log(localStorage.length);
 
     let project = loadProject(projectName);
-    console.log(project);
 
     // for each todo create a div
     project.getTodos().forEach(todo => {
@@ -142,5 +136,12 @@ function loadProjectPage(projectName) {
         priorityAndImageContainer.appendChild(priorityImage);
         mainTodo.appendChild(priorityAndImageContainer);
         document.querySelector(".main").appendChild(mainTodo);
+    });
+}
+
+function clearMainContent() {
+    const mainTodos = document.querySelectorAll(".main-todo");
+    mainTodos.forEach(div => {
+        div.remove();
     });
 }
