@@ -1,7 +1,7 @@
 import { parseISO } from "date-fns";
 
 export class Todo {
-    constructor(title = "New TODO", description = "", dueDate = new Date(), priority = "low", completed = false) {
+    constructor(title = "New TODO", description = "", dueDate = new Date(), priority = "1", completed = false) {
         this.title = title;
         this.description = description;
         // check if dueDate is a string then parse it to a date object
