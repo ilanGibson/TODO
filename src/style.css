@@ -25,6 +25,15 @@ body {
     text-align: center;
 }
 
+.sidebar h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 45px;
+}
+label {
+    margin-right: 10px;
+}
+
 .sidebar-project {
     border: 1px solid white;
     border-radius: 5px;
@@ -36,4 +45,47 @@ body {
 .sidebar-project:hover {
     background: #c7b198;
     color: #596e79;
+}
+
+.main-todo {
+    padding: 10px;
+    border: 1px solid #596e79;
+    border-radius: 5px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-todo:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.9);
+}
+
+/* check box and title section */
+.checkbox-and-title-container {
+    margin-bottom: 10px;
+}
+.checkbox {
+    margin-right: 10px;
+}
+
+.todo-title {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+/* priority label and image section */
+.priority-and-image-container {
+    display: flex;
+    align-items: center;
+}
+.main label {
+    margin: 0px;
+    margin-right: 10px;
+}
+.priority-image {
+    width: 50px;
+    height: 50px;
 }
