@@ -58,7 +58,6 @@ function loadProjects(sidebar) {
     // add a click event listener to the div
     // when the div is clicked load the project page
     projectNames.forEach(projectName => {
-        console.log(projectName);
         // const project = loadProject(projectName);
         const projectDiv = document.createElement("div");
         projectDiv.classList.add("sidebar-project");
