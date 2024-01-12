@@ -20,7 +20,7 @@ let todo1 = new Todo(
 );
 
 let todo2 = new Todo(
-  "Todo 2",
+  "Todo 23",
   "Description 2",
   "2021-09-02",
   "2",
