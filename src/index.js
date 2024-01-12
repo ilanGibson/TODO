@@ -12,7 +12,7 @@ const project2 = new Project("Project 2");
 const project3 = new Project("Project 3");
 const project4 = new Project("Project 4");
 let todo1 = new Todo(
-  "Todo 3",
+  "Spanish Homework",
   "Description 1",
   "2021-09-01",
   "4",

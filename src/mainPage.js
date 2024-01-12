@@ -28,7 +28,7 @@ export default function mainPage() {
     const filterDropdown = document.createElement("select");
     let option1 = document.createElement("option");
     option1.value = "option1";
-    option1.textContent = "HI";
+    option1.textContent = "None";
     let option2 = document.createElement("option");
     option2.value = "option2";
     option2.textContent = "Option 2";
